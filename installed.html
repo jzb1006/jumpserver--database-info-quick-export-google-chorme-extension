@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何使用</title>
+    <!-- 引入bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="w-100">
+                <div class="jumbotron bg-primary text-white">
+                    <h1 class="display-4 text-center ">👏欢迎使用堡垒机一键导出🎊</h1>
+                    <hr class="my-4">
+                    <p class="lead text-center">请认真阅读使用说明</p>
+                </div>
+            </header>
+            <div class="step w-100 shadow p-3 mb-5 bg-white rounded">
+                <div class="text-center">
+                    <img class="img-fluid  img-thumbnail" src="images/1.1.png" />
+                </div>
+                <p class="lead text-center text-primary">安装插件后会出现两个按钮,一个是一键导出为Navicat连接信息,一个是导出其他连接信息。</p>
+            </div>
+            <div class="step w-100 shadow p-3 mb-5 bg-white rounded  text-center">
+                <div>
+                    <img class="img-fluid" src="images/navicat1.png" />
+                    <p class="lead text-center text-primary">点击导出</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/navicat2.png" />
+                    <p class="lead text-center text-primary">右上角会弹出导出成功提示</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/navicat3.jpg" />
+                    <p class="lead text-center text-primary">导入Navicat连接</p>
+                </div>
+                <div>
+                    <img class="img-fluid" src="images/navicat4.png" />
+                </div>
+                <p class="lead text-center text-primary">点击连接</p>
+            </div>
+            <div class="step w-100 shadow p-3 mb-5 bg-white rounded">
+                <!-- other.mp4 -->
+                <div class="text-center">
+                    <img class="img-fluid" src="images/other1.png" />
+                </div>
+                <p class="lead text-center text-primary">一键导出为其他连接信息</p>
+                <div class="alert alert-primary" role="alert">
+                    模版信息只需要您填写一次，之后就可以一键导出了。您可以替换的信息有：
+                </div>
+                <ul class="list-group ">
+                    <li class="list-group-item">${ConnectionName}：连接名称</li>
+                    <li class="list-group-item">${ConnType} ：连接类型</li>
+                    <li class="list-group-item">${Host} ：主机地址</li>
+                    <li class="list-group-item">${Port} ：端口</li>
+                    <li class="list-group-item">${UserName} ：用户名</li>
+                    <li class="list-group-item">${Password} ：密码</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

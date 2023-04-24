@@ -1,0 +1,95 @@
+.navicat-button {
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.navicate-title {
+    padding-left: 9px;
+    padding-top: 6px;
+}
+
+.button-wapper {
+    position: relative;
+    padding-left: 10px;
+    padding-top: 6px;
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-all;
+    cursor: pointer;
+
+}
+
+.navicat-toast {
+    /* 宽和高 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c0c0c0;
+    color: #1f1c1c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999999;
+    /* 添加以下动画效果 */
+    animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+
+/* 定义弹簧动画 */
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    75% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#output-select {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+}
+
+#output-button1,
+#output-button2 {
+    position: fixed;
+    bottom: 20px;
+    width: 90px;
+}
+
+#output-button1 {
+    left: 50%;
+    margin-left: -45px;
+}
+
+#output-button2 {
+    left: 50%;
+    margin-left: 45px;
+}
+
+#mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
